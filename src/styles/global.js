@@ -1,8 +1,8 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 import background from '../assets/images/background.svg';
 
-export default createGlobalStyle`${css`
+export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
 
   * {
@@ -32,5 +32,4 @@ export default createGlobalStyle`${css`
     margin: 0 auto;
     padding: 0 20px 50px;
   }
-`}
 `;
