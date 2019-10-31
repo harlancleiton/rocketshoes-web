@@ -8,7 +8,7 @@ import { formatPrice } from '../../util/format';
 
 class Home extends Component {
   state = {
-    products: []
+    products: [],
   };
 
   async componentDidMount() {
@@ -16,7 +16,7 @@ class Home extends Component {
 
     const data = response.data.map(product => ({
       ...product,
-      priceFormatted: formatPrice(product.price)
+      priceFormatted: formatPrice(product.price),
     }));
 
     this.setState({ products: data });
@@ -27,7 +27,7 @@ class Home extends Component {
 
     dispatch({
       type: 'ADD_TO_CART',
-      product
+      product,
     });
   };
 
